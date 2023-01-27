@@ -14,7 +14,7 @@ h3 {
         @apply flex justify-center items-center py-24 flex-col gap-y-10 h-screen bg-slate-100;
     }
     .login-container {
-        @apply flex justify-center items-center flex-col p-8 rounded-md border w-w-100 shadow-sm bg-slate-50 px-3;
+        @apply flex justify-center items-center flex-col p-10 rounded-md border w-w-100 shadow-sm bg-slate-50 px-3;
     }
     .login-title {
         @apply text-black font-bold text-lg
