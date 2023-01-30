@@ -5,13 +5,15 @@ const Login = () => {
         name: "email",
         placeholder: "",
         title: "Email Address",
-        type: "email"
+        type: "email",
+
     },
     {
         name: "password",
         placeholder: "",
         title: "Password",
-        type: "password"
+        type: "password",
+        subLink: "Forget Password?"
     }]
     return (
         <div className='login-screen'>
@@ -23,19 +25,17 @@ const Login = () => {
                     {
                         loginFields?.map((item) => {
                             return <div className='flex flex-col gap-y-2 mt-4 '>
-                                <p>{item?.title}</p>
+                                <div className='flex justify-between items-center'><p>{item?.title}</p>{item?.subLink != undefined ? <a href='#' className='text-gray-500 font-bold text-sm'>{item?.subLink}</a> : null}</div>
                                 <input className='h-12 rounded-md border-2 outline-none p-2' />
                             </div>
                         })
                     }
-
-
+                    <button className='mt-5 rounded-sm border-0 login-btn'>Login</button>
+                    <div className='flex justify-center'>
+                        <p>Don't have an account yet? <a href="#" className="text-blue-500 font-bold">Register</a></p>
+                    </div>
                 </div>
-
-
-
             </div>
-
         </div>
     )
 }
