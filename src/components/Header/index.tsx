@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.css'
+import { SearchOutlined } from '@ant-design/icons';
 function Header() {
     return (
         <div className="main-container" >
@@ -10,7 +11,7 @@ function Header() {
             <div className="right">
                 <div className='search-bar'>
                     <input placeholder='Search Here'></input>
-                    <i className="fa fa-search" aria-hidden="true"></i>
+                    <SearchOutlined />
                 </div>
             </div>
         </div>
