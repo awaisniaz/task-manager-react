@@ -9,6 +9,10 @@ h3 {
     font-family: CircularStd, sans-serif;
 }
 
+p {
+    font-size: 14px !important;
+}
+
 @layer components {
     .login-screen {
         @apply flex justify-center items-center py-24 flex-col gap-y-10 h-screen bg-slate-100;
